@@ -105,8 +105,8 @@ fun ProductList(
 @Composable
 fun DisplayProduct(
     product: Product?,
-    onBack: (() -> Unit)? = null, // Callback to handle for back button (Optional based on orientation)
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onBack: (() -> Unit)? = null // Callback to handle for back button (Optional based on orientation)
 ) {
     Column(modifier = modifier.padding(16.dp)) {
         if (product == null) {
